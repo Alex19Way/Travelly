@@ -13,8 +13,12 @@ button{
     border: none; 
     color: white;
     cursor: pointer;
+    transition: background 0.5s ease-in-out;
 }
-/* HERo-section nav*/
+    button:hover{
+        background-color: #2a3e57;
+    }
+/* HERO-SECTION nav*/
 .main-header{
     background-color: #131c27;
     color: white;
@@ -39,7 +43,7 @@ button{
         font-family: 'Pattaya', sans-serif;
     }
 
-.hero_section{
+.hero-section{
     min-height: 90vh;
     background:linear-gradient(rgba(0, 0, 0, 0.5), transparent) ,url("./img/landing-page.jpg");
     background-repeat: no-repeat;
@@ -54,10 +58,61 @@ button{
 }
     .hero_section h3{padding: 5rem;}
 
+/* Locations-section */
+.locations{
+    font-size: 45%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent) ,url(./img/new-york-page.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+    .locations-header{width: 90%;margin: auto;}
+    .locations-header h2{padding: 1rem 0rem;}
+    .locations-header h3{padding: 4rem 0rem;}
+.cloud{
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    opacity: 0.9;
+    pointer-events: none;
+}
+    .moving-cloud-1{
+        animation: cloudAnimation 3s infinite alternate ease-in-out;
+    }
+    .moving-cloud-2{
+        top: 10%;
+        z-index: -1;
+        opacity: 0.5;
+        animation: cloudAnimation 3s infinite alternate ease-in-out;
+    }
+@keyframes cloudAnimation{
+    from{transform: translate(10%, -10%);}
+    to{transform: translate(0%, 0%);}
+}
 
 
+
+
+
+
+
+
+/* Media Query*/
 @media screen and (max-width: 932px){
     .main-header nav{text-align: center;}
-    #logo{padding: 2rem; justify-content: center;}
+    .hero-section h3{padding: 5rem;}
+    #logo{padding: 2rem;}
     html{font-size: 45%;}
+
+    .cloud{top: -15%; right: -15%;}
+    .locations-header{text-align: center;}
+    .locations-header h3{
+        background: linear-gradient(lightgray, #e1e1e1);
+        padding: 2rem;
+        margin: 2rem;
+    }
 }
