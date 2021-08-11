@@ -56,7 +56,7 @@ button{
     align-items: center;
     text-align: center;
 }
-    .hero_section h3{padding: 5rem;}
+    #herosec3{padding: 5rem;}
 
 /* Locations-section */
 .locations{
@@ -81,13 +81,13 @@ button{
     pointer-events: none;
 }
     .moving-cloud-1{
-        animation: cloudAnimation 3s infinite alternate ease-in-out;
+        animation: cloudAnimation 3s 3 alternate ease-in-out;
     }
     .moving-cloud-2{
         top: 10%;
         z-index: -1;
         opacity: 0.5;
-        animation: cloudAnimation 3s infinite alternate ease-in-out;
+        animation: cloudAnimation 3s 3 alternate ease-in-out;
     }
 @keyframes cloudAnimation{
     from{transform: translate(10%, -10%);}
@@ -108,7 +108,7 @@ button{
     #logo{padding: 2rem;}
     html{font-size: 45%;}
 
-    .cloud{top: -15%; right: -15%;}
+    .cloud{top: -20%; right: -20%;}
     .locations-header{text-align: center;}
     .locations-header h3{
         background: linear-gradient(lightgray, #e1e1e1);
