@@ -5,7 +5,8 @@ h1{font-size: 2.6rem;}
 p,ul,button,input,label{font-size: 2rem;}
 h2{font-size: 4.8rem; font-weight: bolder;}
 h3{font-size: 3rem; font-weight: normal;}
-h4,h5{font-size: 2.8rem;}
+h4{font-size: 2.8rem;}
+h5{font-size: 2rem;}
 a{color: white; text-decoration: none;}
 button{
     padding: 2rem 6rem; 
@@ -93,7 +94,7 @@ button{
     from{transform: translate(10%, -10%);}
     to{transform: translate(0%, 0%);}
 }
-/* Benefitss-section */
+/* Benefits-section */
 .header-benefits{
     min-height: 25vh;
     background: #343c44;
@@ -123,10 +124,50 @@ button{
     .card img{max-width: 20%;}
     .card-img{background: #4c6e97;}
     .card *{padding: 2rem;}
-
-
-
-
+/* Contacts-section */
+.form-contacts{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),transparent) ,url(./img/contact-mountain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px black;
+}
+    .form-contacts-back{
+        background: rgba(19,28,39,0.8);
+        width: 60%;
+        color: white;
+        border-radius: 20px;
+    }
+        .form-contacts-back h3{padding: 5rem;}
+        .form-contacts-back label{padding: 3rem;}
+        .form-contacts-back input{padding: 1rem;}
+    .form-name,.form-email{padding: 3rem;}
+    .form-button{
+        padding: 2rem;
+        width: 100%;
+        margin-top: 8rem;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+.footer{
+    color: white;
+    background: rgba(19,28,39);
+}
+    .footer-wrapper{
+        width: 90%;
+        margin: auto;
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer ul{display: flex;}
+    .footer li{padding: 2rem;}
 
 
 /* Media Query*/
@@ -142,5 +183,8 @@ button{
         background: linear-gradient(lightgray, #e1e1e1);
         padding: 2rem;
         margin: 2rem;
+    }
+    .form-contacts-back{
+        width: 80%;
     }
 }
