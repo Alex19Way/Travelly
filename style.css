@@ -172,6 +172,7 @@ button{
 
 /* Media Query*/
 @media screen and (max-width: 932px){
+    .main-header{position: sticky; top: 0px; z-index: 4;}
     .main-header nav{text-align: center;}
     .hero-section h3{padding: 5rem;}
     #logo{padding: 2rem;}
@@ -188,3 +189,4 @@ button{
         width: 80%;
     }
 }
+
